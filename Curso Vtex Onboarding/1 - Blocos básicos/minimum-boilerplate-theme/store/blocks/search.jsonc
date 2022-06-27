@@ -1,7 +1,51 @@
 {
-  "store.search": {
-    "blocks": [
-      
-    ]
-  }
+    "store.search": {
+        "blocks": ["search-result-layout"]
+    },
+    "search-result-layout": {
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop": {
+        "children": [
+            "breadcrumb.search",
+            "search-title.v2",      // Termo buscado
+            "total-products.v2",    // Total de resultados
+            "order-by.v2",          // Opções de ordenação
+            "search-fetch-previous",
+            "flex-layout.row"
+        ]
+    },
+    "flex-layout.row": {
+        "children": [
+            "flex-layout.col#filter",
+            "flex-layout.col#result"
+        ]
+    },
+    "flex-layout.col#filter": {
+        "props": {
+            "width": "20%"
+        },
+        "children": [
+            "filter-navigator.v3"   // Opções de filtro
+        ]
+    },
+    "flex-layout.col#result": {
+        "children": [
+            "search-content",       // Prateleira de resultados
+            "flex-layout.row#show-more"
+        ]
+    },
+    "flex-layout.row#show-more": {
+        "props": {
+            "marginTop": "8",
+            "marginBottom": "9"
+        },
+        "children": [
+            "search-fetch-more"     // Btn mostrar mais
+        ]
+    }
 }
