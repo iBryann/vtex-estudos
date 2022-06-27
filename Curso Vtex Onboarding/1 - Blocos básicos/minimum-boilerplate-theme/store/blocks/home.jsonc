@@ -1,6 +1,7 @@
 {
     "store.home": {
         "blocks": [
+            // "clube-certo",
             "rich-text",
             "info-card",
             "info-card#button-left"
