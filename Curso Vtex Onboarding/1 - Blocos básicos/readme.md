@@ -37,8 +37,8 @@ fetch('/safedata/CL/search?email=<SEU EMAIL>&_fields=firstName')
 .then(r => r.json())
 .then(r => console.log(r))
 
-// Metódo SafeData 2
-fetch('/api/io/safedata/CL/search?email=<SEU EMAIL>&_fields=firstName')
+// Metódo SafeData 2 (nem passar um filtro, só os campos que queremos)
+fetch('/api/io/safedata/CL/search?_fields=firstName')
 .then(r => r.json())
 .then(r => console.log(r))
 ```
