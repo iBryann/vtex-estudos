@@ -1,12 +1,10 @@
 {
-    "store.product": {
-        "children": [
-            "breadcrumb",
-            "flex-layout.row#main"
-        ]
-    },
-    "flex-layout.row#main": {
-        "props": {},
+    "flex-layout.row#product-view": {
+        "props": {
+            "paddingTop": 6,
+            "paddingBottom": 6,
+            "colGap": 6
+        },
         "children": [
             "flex-layout.col#left",
             "flex-layout.col#right"

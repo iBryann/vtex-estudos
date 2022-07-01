@@ -3,10 +3,10 @@
         "blocks": [
             "responsive-layout.desktop#desktop",
             "responsive-layout.mobile#mobile",
-            "flex-layout.row#slider-home", // Estou importando esse template do arquivo slider-layout.jsonc 😮
-            "flex-layout.row#home",
-            "flex-layout.row#tab-layout",
-            "modal-trigger#first"
+            "flex-layout.row#slider-brands", // Estou importando esse template do arquivo slider-layout.jsonc 😮
+            "flex-layout.row#time-to-rethink",
+            "flex-layout.row#tab-layout", // Tabs
+            "flex-layout.row#shelf" // Prateleira
         ]
     },
     "responsive-layout.desktop#desktop": {
@@ -55,7 +55,9 @@
             "maxWidth": "100%"
         }
     },
-    "flex-layout.row#home": {
+
+    
+    "flex-layout.row#time-to-rethink": {
         "children": [
             "info-card#rethink",
             "flex-layout.col#1"
@@ -86,29 +88,6 @@
         "props": {
             "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
             "maxWidth": "100%"
-        }
-    },
-    "modal-trigger#first": {
-        "children": [
-            "link#trigger",
-            "modal-layout#first"
-        ]
-    },
-    "link#trigger": {
-        "props": {
-            "label": "CLICK ME",
-            "displayMode": "button",
-            "buttonProps": { "primary": "danger ", "size": "small" }
-        }
-    },
-    "modal-layout#first": {
-        "children": [
-            "rich-text#hello"
-        ]
-    },
-    "rich-text#hello": {
-        "props": {
-            "text": "Hello"
         }
     }
 }

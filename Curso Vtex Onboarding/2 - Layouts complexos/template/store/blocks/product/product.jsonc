@@ -1,0 +1,8 @@
+{
+    "store.product": {
+        "children": [
+            "breadcrumb",
+            "flex-layout.row#product-view"
+        ]
+    }
+}

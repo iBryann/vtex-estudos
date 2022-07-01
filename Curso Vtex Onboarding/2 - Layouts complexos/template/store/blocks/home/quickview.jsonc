@@ -1,0 +1,33 @@
+{
+    "flex-layout.row#shelf": {
+        "props": {
+            "marginTop": 6,
+            "marginBottom": 6
+        },
+        "children": ["list-context.product-list#shelf"]
+    },
+    "list-context.product-list#shelf": {
+        "blocks": ["product-summary.shelf#quickview"],
+        "children": ["slider-layout"] // Os produtos serão apresentados dentro de um slider
+    },
+    "product-summary.shelf#quickview": {
+        "children": [
+            "modal-trigger#quickview", // 1. Renderiza a imagem do produto
+            "product-summary-name",
+            "product-selling-price"
+        ]
+    },
+    "modal-trigger#quickview": {
+        "children": [
+            "product-summary-image", // 2. E clicando na imagem abre o quickview
+            "modal-layout#quickview" // 3. Eu sou o quickview!
+            // OBS: Se eu colocar todos os blocos de produto aqui dentro, o card inteira
+            // mostrará o quickview ao ser clicado
+        ]
+    },
+    "modal-layout#quickview": {
+        "children": [
+            "flex-layout.row#product-view" // Consigo reaproveitar o layout de produto aqui 😍
+        ]
+    }
+}
