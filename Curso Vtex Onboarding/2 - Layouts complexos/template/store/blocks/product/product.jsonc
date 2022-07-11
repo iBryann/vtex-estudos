@@ -2,22 +2,7 @@
     "store.product": {
         "children": [
             "breadcrumb",
-            "conditional-layout.product",
             "flex-layout.row#product-view"
-        ]
-    },
-    "condition-layout.product": {
-        "props": {
-            "conditions": [
-                {
-                    "subject": "productId",
-                    "verb": "is",
-                    "object": "20"
-                }
-            ]
-        },
-        "children": [
-            "condition.product#iorgute"
         ]
     }
 }
