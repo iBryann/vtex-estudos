@@ -2,7 +2,30 @@
     "store.product": {
         "children": [
             "breadcrumb",
+            "condition-layout.product",
             "flex-layout.row#product-view"
         ]
+    },
+    "condition-layout.product": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "38"
+                    }
+                    // Leia o read-me para aprender um jeito fácil de conseguir o
+                    // id de um produto ou categoria
+                }
+            ],
+            "Then": "rich-text#a",
+            "Else": "rich-text#b"
+        }
+    },
+    "rich-text#a": {
+        "props": {"text": "## Iogurte é top"}
+    },
+    "rich-text#b": {
+        "props": {"text": "## Prefiro iogurte"}
     }
 }

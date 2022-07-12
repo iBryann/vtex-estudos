@@ -15,6 +15,16 @@ https://vtex.io/docs/releases/2019-week-43-44/css-selectors-deprecation?utm_sour
 
 Nessa seção, em cada etapa dos meus estudos, vou deixar algumas dicas de coisas interessantes que consegui absorver.
 
-### 1. ...
+### 1. Como saber o ID de um departamento, categoria, subcategoria ou produto?
 
-...
+Se quiser de uma categoria, por exemplo, abra a página de uma categoria, atualize ela e abra o console. No console digite "__RUNTIME__.route.params". Vc receberá um objeto como o abaixo:
+
+```js
+{
+    "id": "38",
+    "department": "frios-e-laticinios",
+    "category": "iogurtes"
+}
+```
+
+Nesse caso, o ID em questão sempre se refere ao contexto no qual você está. Por exemplo: se estiver na página de um produto esse ID será do produto, mas se estiver em uma página de categoria esse ID será o da catiguria 😌
