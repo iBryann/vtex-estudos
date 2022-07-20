@@ -1,7 +1,8 @@
 {
     "store.home": {
         "blocks": [
-            "stack-layout#cta",
+            "slider-programavel#demo",
+            // "stack-layout#cta",
             "responsive-layout.desktop#desktop",
             "responsive-layout.mobile#mobile",
             "flex-layout.row#slider-brands", // Estou importando esse template do arquivo slider-layout.jsonc 😮
